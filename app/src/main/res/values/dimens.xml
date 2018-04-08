@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTxtDim">40sp</dimen>
+    <dimen name="marginTitleTop">8dp</dimen>
+    <dimen name="marginQuestion">5dp</dimen>
+    <dimen name="marginTitleSides">8dp</dimen>
+    <dimen name="quizPadding">10dp</dimen>
+    <dimen name="paddingAnswer">15dp</dimen>
+    <dimen name="questionText">20sp</dimen>
+    <dimen name="answerText">16sp</dimen>
+    <dimen name="Button">10dp</dimen>
+</resources>

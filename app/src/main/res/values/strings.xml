@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ItaEatQuiz</string>
+    <string name="title1">Welcome to </string>
+    <string name="title2">Pasta</string>
+    <string name="title3">Cooking</string>
+    <string name="title4">Quiz!</string>
+    <string name="question1">1 - What\'s the most typical italian dish?</string>
+    <string name="answer1a">It\'s only five letters!</string>
+    <string name="question2">2 - Which is the Traditional way to cook Pasta</string>
+    <string name="answer2c">Pour water in a pot - boil water - put salt\ndrop pasta - drain it - dress it</string>
+    <string name="answer2b">Pour water in a pot - put salt - put dressing\nboil until the water drains</string>
+    <string name="answer2a">Put dressing in a pot - make it boil\ndrop pasta - wait until it\'s OK</string>
+    <string name="question3">3 - it\'s okay to use ketchup instead of tomato sauce?</string>
+    <string name="answer3a">no, never, it\'s blasphemy</string>
+    <string name="answer3b">yes it\'s quite the same</string>
+    <string name="answer3c">it depends on the recipe</string>
+    <string name="question4">4 - Which are the two main ingredient in Carbonara\'s recipe?</string>
+    <string name="answer4a">Tomatoes</string>
+    <string name="answer4b">Bacon</string>
+    <string name="answer4c">Eggs</string>
+    <string name="answer4d">anchovies</string>
+    <string name="answer4e">milk</string>
+    <string name="question5">5 - Which type of pasta is this?</string>
+    <string name="question6">6 - What\'s the most famous italian dish?</string>
+    <string name="answer5a">Pennette</string>
+    <string name="answer5b">Tortiglioni</string>
+    <string name="answer5c">Fusilli</string>
+    <string name="submit">check my answer!</string>
+    <string name="reset">i want to try again!</string>
+    <string name="bad">\nYou know nothing Jon Snow</string>
+    <string name="medium">\nQuite impressive!</string>
+    <string name="good">\nUncle Mario? is That you?</string>
+    <string name="zero">\nYou should answer the question</string>
+    <string name="pastaimage">an image of little pasta piece</string>
+</resources>
