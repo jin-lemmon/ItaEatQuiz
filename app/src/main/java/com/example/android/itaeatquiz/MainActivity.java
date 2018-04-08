@@ -25,29 +25,21 @@ public class MainActivity extends AppCompatActivity {
         RadioButton quiz3a = findViewById(R.id.answer3a);
         CheckBox quiz4b = findViewById(R.id.answer4b);
         CheckBox quiz4c = findViewById(R.id.answer4c);
+        CheckBox quiz4a = findViewById(R.id.answer4a);
+        CheckBox quiz4d = findViewById(R.id.answer4d);
+        CheckBox quiz4e = findViewById(R.id.answer4e);
         RadioButton quiz5c = findViewById(R.id.answer5c);
         String question1 = quiz1.getText().toString();
         boolean question2 = quiz2b.isChecked();
         boolean question3 = quiz3a.isChecked();
         boolean question4c = quiz4c.isChecked();
+        boolean question4a = quiz4a.isChecked();
+        boolean question4d = quiz4d.isChecked();
+        boolean question4e = quiz4e.isChecked();
+
         boolean question4b = quiz4b.isChecked();
         boolean question5 = quiz5c.isChecked();
-        if (question1.equals("pasta")) {
-            points += 1;
-        }
-        if (question1.equals("Pasta")) {
-            points += 1;
-        }
-        if (question1.equals("pasta ")) {
-            points += 1;
-        }
-        if (question1.equals("Pasta ")) {
-            points += 1;
-        }
-        if (question1.equals("PASTA ")) {
-            points += 1;
-        }
-        if (question1.equals("PASTA")) {
+        if (question1.trim().equalsIgnoreCase("pasta")); {
             points += 1;
         }
         if (question2) {
@@ -56,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
         if (question3) {
             points += 1;
         }
-        if (question4b) {
-            if (question4c) {
-                points += 1;
-            }
+        if (question4a || question4d || question4e) {
+            points += 0;
+        } else if (question4b && question4c) {
+            points += 1;
         }
         if (question5) {
             points += 1;
@@ -75,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void showPoints(int points) {
         if (points == 0) {
-            Toast.makeText(this, points + "/5"+getText(R.string.zero), Toast.LENGTH_SHORT).show();
-        } else if(points <= 2) {
-            Toast.makeText(this, points + "/5"+getText(R.string.bad), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, points + "/5" + getText(R.string.zero), Toast.LENGTH_SHORT).show();
+        } else if (points <= 2) {
+            Toast.makeText(this, points + "/5" + getText(R.string.bad), Toast.LENGTH_SHORT).show();
         } else if (points <= 4) {
-            Toast.makeText(this, points + "/5"+getText(R.string.medium), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, points + "/5" + getText(R.string.medium), Toast.LENGTH_SHORT).show();
         } else if (points <= 5) {
-            Toast.makeText(this, points + "/5"+getText(R.string.good), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, points + "/5" + getText(R.string.good), Toast.LENGTH_SHORT).show();
         }
     }
 
